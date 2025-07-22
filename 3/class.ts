@@ -39,3 +39,33 @@ let b2 = new BottleMaker("Plastic", 100);
 
 let b11 = new BottleMaker1("Milton", 1200);
 let b21 = new BottleMaker1("Plastic", 100);
+
+
+
+
+// readonly and optional
+
+class Read_optional{
+    constructor(public readonly name: string, public age?: number){}
+}
+
+let ro1 = new Read_optional("shreya")
+let ro2 = new Read_optional("shreya", 22)
+
+
+
+
+// how ot use get set as a property
+class Get_Set{
+    constructor(public _name: string, public age: number){}
+
+    get name(){
+        return this._name;
+    }
+
+    set name(value: string){
+        this._name = value;
+    }
+}
+
+let gs1 = new Get_Set("het", 17)
